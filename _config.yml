@@ -1,0 +1,32 @@
+---
+title: BlueLabsTrial
+timezone: UTC
+collections:
+  authors:
+    title: Authors
+    output: true
+  emps:
+    title: Emps
+    output: true
+  posts:
+    title: Posts
+    output: true
+  testing:
+    title: Testing
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+permalink: pretty
